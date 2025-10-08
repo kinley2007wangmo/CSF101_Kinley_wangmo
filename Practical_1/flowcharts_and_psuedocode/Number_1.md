@@ -21,4 +21,4 @@ OUTPUT area
 
 ---
 
-> **End of the pseudocode algorithm**
+> **End of the pseudocode algorithm** 
