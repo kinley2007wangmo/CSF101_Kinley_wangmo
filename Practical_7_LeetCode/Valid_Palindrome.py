@@ -14,3 +14,7 @@ def isPalindrome(s):
         right -= 1
 
     return True
+
+# Example test input
+s = "A man, a plan, a canal: Panama"
+print(isPalindrome(s))  # Output: True

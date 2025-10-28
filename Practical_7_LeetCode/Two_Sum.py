@@ -7,3 +7,7 @@ class Solution:
                 return [num_map[complement], i]
             num_map[num] = i
         return[]
+
+# Example test input
+nums = [2, 7, 11, 15]
+target = 9

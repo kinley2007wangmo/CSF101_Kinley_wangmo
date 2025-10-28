@@ -9,3 +9,8 @@ def isAnagram(s: str, t: str) -> bool:
         char_counts[ord(c2) - ord('a')] -= 1
     
     return all(count == 0 for count in char_counts)
+
+# Example test input
+s = "anagram"
+t = "nagaram"
+print(isAnagram(s, t))  # Output: True
