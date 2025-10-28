@@ -1,4 +1,4 @@
-def hammingWeight(n: int) -> int:
+def hammingWeight(n):
     count = 0
     while n:
         n &= (n - 1)
