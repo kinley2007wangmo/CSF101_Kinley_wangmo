@@ -1,60 +1,47 @@
-# Reflection on Practical 5
-
-This file contains my reflections on the topics covered in the Practical 5 folder. For each topic, I wrote what I learned, the challenges I faced, and how I overcame them.
-
-*Note: I sincerely apologize for not including screenshots of the problems I faced during this practical. At the time, I was focused on solving the issues and did not think to capture them. I understand that screenshots can greatly help in illustrating challenges and solutions, and I truly appreciate your understanding. I will make it a priority to include relevant screenshots in all future submissions to enhance clarity and learning.*
-
----
+# Reflection – Practical 5 (Binary Search Tree and Graph Traversal)
 
 ## 1. Binary Search Tree
-#### What I Learned
-Understood the core idea of how binary search trees (BSTs) store data in sorted order.
 
-Learned that insertion always goes left if the new value is smaller, and right if it is larger.
+### What I Learned
+- Understood the core concept of how Binary Search Trees (BSTs) store data in sorted order.  
+- Learned that insertion goes left if the new value is smaller and right if it is larger.  
+- Practiced writing traversal methods (inorder, preorder, and postorder) and observed how each produces different outputs.
 
-Practiced writing traversal methods (inorder, preorder, postorder) and saw how they produce different outputs.
-#### Challenges Faced
-Initially struggled with handling cases where the tree was empty.
+### Challenges Faced
+- Initially struggled with handling cases where the tree was empty.  
+- Got confused while writing recursive traversal functions, especially identifying the correct base case.  
+- Sometimes the output order didn’t match my expectations, which required careful tracing.
 
-Got confused when writing recursive traversal functions, especially with the base case.
+### How I Overcame Them
+- Drew tree diagrams on paper to visualize node placement.  
+- Stepped through the recursive calls manually to understand the function’s flow.  
+- Simplified the implementation by writing helper functions that handled one task at a time.
 
-Sometimes the output order wasn’t what I expected, so I had to trace the logic carefully.
-#### How I Overcame Them
-Drew tree diagrams on paper to clearly see where nodes should go.
-
-Walked through my recursive functions step by step to understand how values were returned.
-
-Simplified my code by writing smaller helper functions that focused only on one task.
 ---
 
 ## 2. Graph Data Structure and Traversal Algorithms
-#### What I Learned
-Learned that graphs can be represented in multiple ways, such as adjacency lists and adjacency matrices.
 
-Practiced implementing BFS (level-order traversal) and DFS (depth-first traversal).
+### What I Learned
+- Learned that graphs can be represented using adjacency lists and adjacency matrices.  
+- Practiced implementing Breadth-First Search (BFS) and Depth-First Search (DFS) traversal algorithms.  
+- Understood how traversal strategy affects the order in which nodes are visited.
 
-Saw how traversal strategies affect the order in which nodes are visited.
-#### Challenges Faced
-Had difficulty preventing infinite loops when the graph contained cycles.
+### Challenges Faced
+- Faced difficulty preventing infinite loops in cyclic graphs.  
+- Initially forgot to reset the visited list between separate traversals.  
+- Implementing BFS with a queue was challenging at first due to unfamiliarity with queue operations in Python.
 
-Initially forgot to reset my visited list between different traversal runs.
-
-Writing BFS with a queue was tricky at first since I wasn’t fully comfortable with queue operations in Python.
-#### How I Overcame Them
-Used a set to store visited nodes so that repeated visits were avoided.
-
-Printed the traversal step by step to check if nodes were being visited in the correct order.
-
-Reviewed how queues and stacks work in Python to strengthen my understanding of BFS and DFS.
+### How I Overcame Them
+- Used a set to track visited nodes and avoid revisiting them.  
+- Printed the traversal order step-by-step to verify correctness.  
+- Reviewed stack and queue operations in Python to better understand how BFS and DFS differ.
 
 ---
 
-##  Overall Reflection
-Practical 5 gave me hands-on practice with two important data structures: binary search trees and graphs. Implementing them from scratch made me appreciate how recursion and data organization make searching and traversal efficient.
+## Overall Reflection
+This practical provided hands-on experience with two major data structures — Binary Search Trees and Graphs.  
+Implementing them from scratch deepened my understanding of recursion, data relationships, and efficient searching/traversal methods.
 
 ### Future Improvements
-I want to try implementing self-balancing trees like AVL or Red-Black trees to handle uneven growth.
-
-I plan to explore more advanced graph algorithms such as Dijkstra’s algorithm and Prim’s algorithm to build a stronger foundation in graph theory.
-
----
+- I aim to implement self-balancing trees such as AVL and Red-Black trees to manage uneven tree growth.  
+- I also plan to explore advanced graph algorithms like Dijkstra’s and Prim’s to strengthen my understanding of graph theory and pathfinding.
